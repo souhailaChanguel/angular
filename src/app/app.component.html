@@ -1,7 +1,9 @@
-<section>
-  <header>
-    <h1>Liste des sessions de formation </h1>
-    <p class="description">Suivre les sessions que je veux participer.</p>
-  </header>
-  <app-session-item [name2] ='nameSession'></app-session-item>
-  </section>
+<div class="coop-app">
+  <app-side-bar></app-side-bar>
+  <div class="full-content">
+    <app-top-bar></app-top-bar>
+    <div class="cp-content-box__content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

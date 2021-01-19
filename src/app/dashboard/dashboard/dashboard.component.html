@@ -1,0 +1,76 @@
+<div class="dashboard">
+    <!-- Dashboard content -->
+    <div class="dashboard__content">
+        <!-- Session Cards -->
+        <div class="row">
+            <!-- Session Card -->
+            <div class="col-md-4">
+                <div class="col__session">
+                    <img src="../../assets/session.png" style="height: 135px;
+                    padding: 14px;">
+                    <div class="col__content">
+                        <p class="col__content__nb">{{lgSession}}</p>
+                        <p class="col__content__title">Session</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Participants Card -->
+            <div class="col-md-4">
+                <div class="col__participants">
+                    <img src="../../assets/participants.png" style="height: 135px;
+                    padding: 14px;">
+                    <div class="col__content">
+                        <p class="col__content__nb">{{lgParticipant}}</p>
+                        <p class="col__content__title"> Participants</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Formateurs Card -->
+            <div class="col-md-4">
+                <div class="col__Formateurs">
+                    <img src="../../assets/formateurs.png" style="height: 135px;
+                    padding: 14px;">
+                    <div class="col__content">
+                        <p class="col__content__nb">{{lgFormateur}}</p>
+                        <p class="col__content__title"> Formateurs</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Dashboard table  -->
+        <div class="row">
+            <div class="col" style="padding: 23px;">
+                <table id="customers">
+                    <tr>
+                        <th>Track</th>
+                        <th>Nombre de sessions</th>
+                    </tr>
+                    <tr *ngFor="let sessionItem of sessionItems">
+                        <td>{{sessionItem.track}}</td>
+                        <td>{{countSession(sessionItem.track)}}</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="col" style="padding: 23px 237px;">
+                <table id="customers" style="width:222%;">
+                    <tr>
+
+                        <th>Top formateurs</th>
+                    </tr>
+                    <tr *ngFor="let formateur of formateurs">
+
+                        <td style="display: flex;"> <img src="../../../assets/forma.png" style="width:39px;">
+                            <div class="data" style="padding: 11px;"> {{formateur.nom}} & {{formateur.prenom}}</div>
+                        </td>
+
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

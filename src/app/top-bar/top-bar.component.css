@@ -1,0 +1,21 @@
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #11002c, #2e063d);
+ }
+ .top-bar__user-img img{
+ height: 49px;
+ padding: 14px;
+}
+p {
+    color: aliceblue;
+    padding: 11px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+  }
+  .top-bar__icons-box
+  {
+      display: flex;
+  }

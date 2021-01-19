@@ -1,0 +1,47 @@
+<div class="participants">
+    <!-- Formateur content -->
+    <div class="participants__content">
+        <!-- Formateur button -->
+        <div class="row">
+            <div class="col">
+                <a class="participants__content__actualiser">
+                    <img src="../../assets/actualiser.png">
+                </a>
+            </div>
+            <div class="col">
+                <a class="participants__content__ajouter" (click)="openDialog()">
+                    <img src="../../assets/ajouter.png">
+                </a>
+            </div>
+        </div>
+        <!-- Participants table  -->
+        <div class="table">
+            <table id="customers">
+                <tr>
+                    <th>Liste de Participants
+                    </th>
+                </tr>
+                <tr *ngFor="let participant of participants">
+                    <td class="row">
+                        <div class="table__data"> {{participant.nom }} {{ participant.prenom }} -- Email : {{participant.email}}
+                            -- Adresse : {{participant.adresse}} -- Societe : {{participant.ste}} -- Poste : {{participant.poste}} </div>
+                        <div class="table__button">
+                            <div class="col">
+                                <a class="table__button__delete" (click)="deleteParticipant(participant.id)">
+                                    <img src="../../assets/delete.png">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="table__button__modifier" (click)="openDialogUpdate(participant.id)">
+                                    <img src="../../assets/modifier.png">
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+</div>

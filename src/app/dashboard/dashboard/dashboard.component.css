@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+.row {
+  display: flex;
+  padding: 0px 4%;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+/*******************dashoboard cart**********/
+.col-md-4 {
+  padding: 24px;
+}
+
+.col__session {
+  border: 1px black;
+  background: linear-gradient(45deg, #00a576, #00ffd3) !important;
+  width: 311px;
+  height: 177px;
+  display: flex;
+}
+
+.col__participants {
+  border: 1px black;
+  background: linear-gradient(45deg, #0288d1, #26c6da);
+  width: 311px;
+  height: 177px;
+  display: flex;
+}
+
+.col__Formateurs {
+  border: 1px black;
+  background: linear-gradient(to left, #f90098, #ff6dcb);
+  width: 311px;
+  height: 177px;
+  display: flex;
+}
+
+.col__content {
+  padding: 0px 20px;
+}
+
+.col__content__nb {
+  text-align: center;
+  font-size: 30px;
+}
+
+.col__content__title {
+  margin-top: -20px;
+}
+
+p {
+  color: aliceblue;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*******Dashboard table***********/
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 185%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background: linear-gradient(45deg, #0288d1, #26c6da);
+  color: white;
+}

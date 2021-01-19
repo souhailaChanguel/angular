@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+.sideBar {
+  background: linear-gradient(to bottom, #11002c, #2e063d);
+  width: 300px;
+  height: 100vh;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.9);
+}
+
+p {
+  color: aliceblue;
+  padding: 4px 4px 4px 13px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+
+.sideBar__logo {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px 60px;
+}
+
+.sideBar__logo img {
+  height: 83px;
+}
+
+
+.sideBar__navs {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.sideBar__navs__nav {
+  padding: 10px 20px;
+  cursor: default;
+  display: flex;
+}
+
+
+.sideBar__navs__nav :hover {
+  color: rgb(255, 170, 248);
+  background: linear-gradient(to bottom, #19757203, #1396aba6);
+  border-radius: 48px;
+}
+
+
+
+.selected-path {
+  border-left: 4px solid white;
+  color: rgb(255, 170, 248);
+  font-weight: bold;
+  background: linear-gradient(to bottom, #19757203, #1396aba6);
+  border-radius: 48px;
+
+}

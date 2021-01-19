@@ -1,0 +1,39 @@
+<div class="sideBar">
+  <!--Logo-->
+  <div class="sideBar__logo">
+    <img src="../../assets/logo.png">
+    <p>Espace admine</p>
+  </div>
+
+  <!--Navigation-->
+  <div class="sideBar__navs">
+    <div class="sideBar__navs__nav"> <img src="../../assets/chercher.png" style="
+      height: 29px;
+      padding: 0 13px;
+  "> <input type="text" name="nom" id="nom" value ="Recherche"></div>
+
+    <div class="sideBar__navs__nav" [ngClass]="{'selected-path':selectedPath === 'dashboard'}"
+      (click)="navigateTo('dashboard')"> <img src="../../assets/dashboard.png" style="
+        height: 29px;
+        padding: 0 13px;
+    "> Dashboard</div>
+
+    <div class="sideBar__navs__nav" [ngClass]="{'selected-path':selectedPath === 'admin'}"
+      (click)="navigateTo('admin')"><img src="../../assets/session.png" style="
+      height: 29px;
+      padding: 0 13px;
+  ">Session</div>
+
+    <div class="sideBar__navs__nav" [ngClass]="{'selected-path':selectedPath === 'formateurs'}"
+      (click)="navigateTo('formateurs')"><img src="../../assets/formateurs.png" style="
+      height: 29px;
+      padding: 0 13px;
+  ">Formateurs</div>
+
+    <div class="sideBar__navs__nav" [ngClass]="{'selected-path':selectedPath === 'participants'}"
+      (click)="navigateTo('participants')"><img src="../../assets/participants.png" style="
+      height: 29px;
+      padding: 0 13px;
+  ">Participants</div>
+  </div>
+</div>

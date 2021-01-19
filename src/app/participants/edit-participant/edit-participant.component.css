@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+:host {
+  display: block;
+  padding: 5px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+form {
+  padding-left: 111px;
+}
+
+header,
+label {
+  color: #ffffff;
+}
+
+input {
+  background-color: #ffffff;
+  color: #0e0901;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset, 0 -1px 0 rgba(0, 0, 0, 0.05) inset;
+  border-color: #53e47e;
+  padding: 6px;
+  margin: 12px;
+}
+
+.ng-invalid:not(.ng-pristine):not(.required-invalid) {
+  border: 1px solid #d93a3e;
+}
+
+input[required].ng-invalid {
+  border-right: 5px solid #d93a3e;
+}
+
+input[required]:not(.required-invalid),
+input[required].ng-invalid:not(.required-invalid) {
+  border-right: 5px solid #21ff85;
+  margin: 12px;
+}
+
+button {
+  padding: 10px;
+  font-family: 'Titillium Web', sans-serif;
+  width: 97px;
+  font-size: 14px;
+  position: relative;
+  top: 11;
+  left: 278px;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(45deg, #00a576, #00ffd3) !important;
+}

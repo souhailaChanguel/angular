@@ -1,0 +1,51 @@
+<div class="formateurs">
+    <!-- Formateur content -->
+    <div class="formateurs__content">
+        <!-- Formateur button -->
+        <div class="row">
+            <div class="col">
+                <a class="formateurs__content__actualiser">
+                    <img src="../../assets/actualiser.png">
+                </a>
+
+            </div>
+            <div class="col">
+                <a class="formateurs__content__ajouter" (click)="openDialog()">
+                    <img src="../../assets/ajouter.png">
+                </a>
+            </div>
+        </div>
+        <!-- Formateurs table  -->
+        <div class="table">
+
+            <table id="customers">
+                <tr>
+                    <th>Liste de Formateurs
+                    </th>
+                </tr>
+                <tr *ngFor="let formateur of formateurs">
+                    <td class="row">
+                        <div class="table__data"> {{formateur.nom }} {{ formateur.prenom }} -- Email : {{formateur.email}} -- Adresse :
+                            {{formateur.adresse}} -- Domaine d'expertise : {{formateur.domaineExp}} </div>
+                        <div class="table__button">
+                            <div class="col">
+                                <a class="table__button__delete" (click)="deleteFormateur(formateur.id)">
+                                    <img src="../../assets/delete.png">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="table__button__modifier" (click)="openDialogUpdate(formateur.id)">
+                                    <img src="../../assets/modifier.png">
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+</div>
