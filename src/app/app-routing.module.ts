@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
+  },
   {
     path: 'dashboard',
     loadChildren: './dashboard/dashboard.module#DashboardModule'
@@ -18,10 +22,7 @@ const routes: Routes = [
   {
     path: 'participants',
     loadChildren: './participants/participants.module#ParticipantsModule'
-  },
-  {
-    path: '', 
-    component :PageNotFoundComponent  }
+  }
 ];
 
 @NgModule({

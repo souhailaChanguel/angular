@@ -7,21 +7,24 @@ import { SessionEditFormComponent } from './session-edit-form/session-edit-form.
 
 const routes: Routes = [
   {
-  path: '',
-  component: AdminComponent,
-  children: [
-  { path: 'add', component: SessionAddFormComponent },
-  { path: 'edit/:id', component:
- SessionEditFormComponent },
-  { path: 'list', component: SessionItemListComponent
- },
-  { path: '', redirectTo: 'list', pathMatch: 'full' }
-  ],
+    path: '',
+    component: AdminComponent,
+    children: [
+      { path: 'add', component: SessionAddFormComponent },
+      {
+        path: 'edit/:id', 
+        component:SessionEditFormComponent
+      },
+      {
+        path: 'list', component: SessionItemListComponent
+      },
+      { path: '', redirectTo: 'list', pathMatch: 'full' }
+    ],
   }
- ];
+];
 
 
- @NgModule({
+@NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
