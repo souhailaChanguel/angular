@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { enableProdMode } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 enableProdMode();
 
 @NgModule({
